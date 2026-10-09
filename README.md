@@ -29,7 +29,7 @@ A simple 3-tier web-based Point of Sale (POS) register application designed for 
 
 ## Clone the Repository
 git clone [https://github.com/evaleong/pos-system.git](https://github.com/evaleong/pos-system.git)
-cd pos-system
+-cd pos-system
 
 
 
@@ -62,14 +62,14 @@ pos-system/
 
 
 1.Start the backend server in DOS prompt:
->cd backend 
-npm install 
-node server.js
+>-cd backend 
+-npm install 
+-node server.js
 
 2.Start the Vite React dev server in DOS prompt:
-> cd frontend
-npm install (to install frontend dependencies, first time only)
-npm run dev (to start the Vite React dev server)
-Open my browser to http://localhost:5173 to access the application.
+>-cd frontend
+-npm install (to install frontend dependencies, first time only)
+-npm run dev (to start the Vite React dev server)
+-Open my browser to http://localhost:5173 to access the application.
 
 ---

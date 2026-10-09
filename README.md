@@ -1,7 +1,6 @@
 # 🛒 Point of Sale (POS) System
 
-**Live Demo: 
-# 🛒 Point of Sale (POS) System
+A simple 3-tier web-based Point of Sale (POS) register application designed for retail transactions. Built with a React (Vite) single-page frontend, Node.js/Express API backend, and Supabase PostgreSQL cloud database.
 
 **Live Demo:** [https://pos-system-flax-six.vercel.app/](https://pos-system-flax-six.vercel.app/)
 
@@ -9,57 +8,33 @@
 
 ---
 
-A modern 3-tier web-based Point of Sale (POS) register application designed for retail transactions. Built with a React (Vite) single-page frontend, Node.js/Express API backend, and Supabase PostgreSQL cloud database.
+## 🛠️ Tech Stack & Architecture
 
-
-
----
-
-
-
-## 🚀 Features
-
-
-
-\* \*\*Dynamic Product Catalog:\*\* Loads live product items, prices, and stock quantities directly from PostgreSQL database.
-
-\* \*\*Interactive Cashier Cart:\*\* Add items, modify quantities, and calculate order totals automatically.
-
-\* \*\*Multi-Payment Support:\*\* Handles cash, QR code / DuitNow, and card payments. no actual payment in process. it's just a selection of payment method only.
-
-\* \*\*Real-Time Stock Management:\*\* Automatically updates inventory stock in Supabase upon successful checkout.
-
-\* \*\*Transactional Integrity:\*\* Uses ACID-compliant PostgreSQL updates to ensure stock levels remain accurate.
-
-
+* **Frontend:** React (Vite), CSS3, JavaScript (ES6+) — Hosted on **Vercel**
+* **Backend:** Node.js, Express.js (REST API) — Hosted on **Render**
+* **Database:** PostgreSQL managed via **Supabase** (Session Pooler integration)
+* **Version Control & CI/CD:** Git, GitHub (Automated deployments via GitHub integration)
 
 ---
 
+## ✨ Key Features & Technical Highlights
 
-
-## 🛠️ Tech Stack
-
-
-
-\* \*\*Frontend:\*\* React.js, Vite, JavaScript (ES6+), CSS3
-
-\* \*\*Backend:\*\* Node.js, Express.js, `pg` (PostgreSQL client), `dotenv`
-
-\* \*\*Database:\*\* Supabase (Cloud PostgreSQL) with Session Connection Pooling over IPv4
-
-\* \*\*Version Control:\*\* Git, GitHub
-
-
+* **Real-time Product Catalog:** Load live product items, prices and stock qty inventory from Supabase database.
+* **Real-time Stock mgmt:** Automatically updates inventory stock in Supabase upon successful checkout.
+* **Interactive Shopping Cart:** Client-side cart state management allowing items to be added, quantities adjusted, and totals calculated instantly.
+* **Atomic Checkout System:** Transaction processing that updates stock levels and appends sales receipts directly to Supabase tables. only capture payment data key in, no actual payment gateway involved.
+* **Decoupled 3-Tier Architecture:** Clean separation of concerns between client presentation layer, server business logic, and cloud database storage.
 
 ---
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/evaleong/pos-system.git](https://github.com/evaleong/pos-system.git)
+cd pos-system
 
 
 
 ## 📁 Project Structure
-
-
-
-```text
 
 pos-system/
 
@@ -82,72 +57,20 @@ pos-system/
 &#x20;   └── package.json   # Frontend dependencies
 
 
+---
 
-## 💻 Local Setup \& Running Instructions
-
-1. Prerequisites
-
-Node.js (v18+) installed
+## 💻 If Run/setup on localhost/desktop
 
 
-
-Supabase account \& PostgreSQL database provisioned
-
-
-
-2. Backend Setup
-
-2.1.Clone the repository:
-
-git clone \[https://github.com/YOUR\_USERNAME/pos-system.git](https://github.com/YOUR\_USERNAME/pos-system.git)
-
-cd pos-system
-
-
-
-2.2 Install backend dependencies:
-
-npm install
-
-
-
-2.3 Create a .env file in the root folder and add my database URL:
-
-PORT=5000
-
-DATABASE\_URL=postgresql://postgres.xxx:YOUR\_PASSWORD@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
-
-
-
-2.4. Start the backend server:
-
+1.Start the backend server in DOS prompt:
+>cd backend 
+npm install 
 node server.js
 
+2.Start the Vite React dev server in DOS prompt:
+> cd frontend
+npm install (to install frontend dependencies, first time only)
+npm run dev (to start the Vite React dev server)
+Open my browser to http://localhost:5173 to access the application.
 
-
-3\. Frontend Setup
-
-3.1 Open a new terminal and navigate to the frontend directory:
-
-cd frontend
-
-
-
-3.2.Install frontend dependencies:
-
-npm install
-
-
-
-3.3.Start the Vite React dev server:
-
-npm run dev
-
-
-
-3.4 Open my browser to http://localhost:5173 to access the application.
-
-
-
-
-
+---

@@ -1,16 +1,23 @@
-\# 🛒 Full-Stack Point of Sale (POS) System
+# 🛒 Point of Sale (POS) System
 
+**Live Demo: 
+# 🛒 Point of Sale (POS) System
 
+**Live Demo:** [https://pos-system-flax-six.vercel.app/](https://pos-system-flax-six.vercel.app/)
+
+> ⚡ **Note on Initial Load:** The backend is hosted on Render's free tier. If the app has been idle for 15 minutes, the backend goes into sleep mode. Please allow ~30 seconds for the initial server spin-up on your first request.
+
+---
 
 A modern 3-tier web-based Point of Sale (POS) register application designed for retail transactions. Built with a React (Vite) single-page frontend, Node.js/Express API backend, and Supabase PostgreSQL cloud database.
 
 
 
-\---
+---
 
 
 
-\## 🚀 Features
+## 🚀 Features
 
 
 
@@ -26,11 +33,11 @@ A modern 3-tier web-based Point of Sale (POS) register application designed for 
 
 
 
-\---
+---
 
 
 
-\## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 
 
@@ -44,11 +51,11 @@ A modern 3-tier web-based Point of Sale (POS) register application designed for 
 
 
 
-\---
+---
 
 
 
-\## 📁 Project Structure
+## 📁 Project Structure
 
 
 
@@ -76,9 +83,9 @@ pos-system/
 
 
 
-\## 💻 Local Setup \& Running Instructions
+## 💻 Local Setup \& Running Instructions
 
-1\. Prerequisites
+1. Prerequisites
 
 Node.js (v18+) installed
 
@@ -88,7 +95,7 @@ Supabase account \& PostgreSQL database provisioned
 
 
 
-2\. Backend Setup
+2. Backend Setup
 
 2.1.Clone the repository:
 

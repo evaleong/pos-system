@@ -27,8 +27,7 @@ A simple 3-tier web-based Point of Sale (POS) register application designed for 
 
 ---
 
-### 1. Clone the Repository
-```bash
+## Clone the Repository
 git clone [https://github.com/evaleong/pos-system.git](https://github.com/evaleong/pos-system.git)
 cd pos-system
 

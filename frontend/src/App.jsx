@@ -15,7 +15,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/products');
+      const response = await fetch('https://pos-backend-tsgl.onrender.com/api/products');
       const data = await response.json();
       setProducts(data);
       setLoading(false);
@@ -65,7 +65,7 @@ function App() {
     if (cart.length === 0) return;
 
     try {
-      const response = await fetch('http://localhost:5000/api/checkout', {
+      const response = await fetch('https://pos-backend-tsgl.onrender.com/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items: cart, paymentMethod })
